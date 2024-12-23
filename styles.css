@@ -1,13 +1,18 @@
 .filter-btn.active {
-    border-width: 2px;
-    border-color: rgba(59, 130, 246, 1);
+  border-width: 2px;
+  border-color: rgba(59, 130, 246, 1);
 }
 
 @media (max-width: 768px) {
-    .md\:hidden {
-        display: block;
-    }
-    .hidden.md\:flex {
-        display: none;
-    }
+  .md\:hidden {
+    display: block;
+  }
+  .hidden.md\:flex {
+    display: none;
+  }
+}
+
+.quick-access-card,
+.itinerary-card {
+  cursor: pointer;
 }
