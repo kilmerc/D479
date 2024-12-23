@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiYgZIQKB74V+hVfQ6f+7LazcE/u9wJ7IK72pLPMwRAuNKfFzt/iG91Zwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-white shadow">
+        <div class="container">
+            <h1><span class="text-blue">Taniti</span></h1>
+            <nav class="hide-on-mobile">
+                <a href="#">Explore</a>
+                <a href="#">Stay</a>
+                <a href="#">Plan</a>
+                <a href="#">Essential Info</a>
+            </nav>
+            <i class="fa-solid fa-bars menu-icon hide-on-desktop"></i>
+        </div>
+    </header>
+
+    <div class="alert-banner">
+        <div class="container flex">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>Emergency: 911 | Hospital: +1-555-0123 | Tourist Help: +1-555-0199</p>
+        </div>
+    </div>
+
+
+    <div class="hero bg-blue-dark">
+        <div class="container text-center">
+            <h2>Welcome to Taniti</h2>
+            <div class="search-box">
+                <div class="input-group">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search activities, hotels, etc.">
+                </div>
+                <div class="filter-buttons">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="family">&#127968; Family</button>
+                    <button data-filter="business">&#128188; Business</button>
+                    <button data-filter="adventure">&#127939; Adventure</button>
+                </div>
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-access container">
+      <h2>Quick Access</h2>
+      <div class="card-grid">
+         </div>
+    </div>
+        
+    <div class="itineraries container">
+        <h2>Suggested Itineraries</h2>
+        <div class="card-grid">
+        </div>
+    </div>
+    
+    <div class="local-tips bg-gray-light">
+        <div class="container">
+            <h2>Local Tips</h2>
+            <div class="tip-grid">
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white">
+      <div class="container">
+          <div class="footer-grid">
+            <div>
+                <h3>About Taniti</h3>
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Culture</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Plan Your Trip</h3>
+                <ul>
+                  <li><a href="#">Getting Here</a></li>
+                  <li><a href="#">Accommodations</a></li>
+                  <li><a href="#">Activities</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Essential Info</h3>
+                <ul>
+                  <li><a href="#">Safety Tips</a></li>
+                  <li><a href="#">Emergency Contacts</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact Us</h3>
+                <ul>
+                  <li>Tourist Office: +1-555-0199</li>
+                  <li>Email: info@taniti.gov</li>
+                  <li>Hours: 24/7</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
