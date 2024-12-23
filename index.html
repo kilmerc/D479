@@ -64,33 +64,26 @@
               placeholder="Search activities, hotels, etc."
               class="w-full outline-none"
             />
+            <select
+              id="searchFilter"
+              class="ml-2 border-none outline-none text-gray-500"
+            >
+              <option value="all">All</option>
+              <option value="family">Family</option>
+              <option value="business">Business</option>
+              <option value="adventure">Adventure</option>
+            </select>
           </div>
 
-          <!-- Filter Buttons -->
-          <div class="flex space-x-4 mb-4" id="filterButtons">
-            <button
-              class="filter-btn px-4 py-2 rounded-full bg-blue-100"
-              data-filter="family"
-            >
-              🏖️ Family
-            </button>
-            <button
-              class="filter-btn px-4 py-2 rounded-full bg-green-100"
-              data-filter="business"
-            >
-              💼 Business
-            </button>
-            <button
-              class="filter-btn px-4 py-2 rounded-full bg-orange-100"
-              data-filter="adventure"
-            >
-              🏃 Adventure
-            </button>
-          </div>
-
-          <button
+          <!-- <button
             class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700"
             id="searchButton"
+          >
+            Search
+          </button> -->
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700"
+            onclick="window.location.href='SubPages/Helicopter/helicopter.html'"
           >
             Search
           </button>
@@ -100,10 +93,11 @@
 
     <!-- Quick Access Cards -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-8" id="quickAccessCards">
         <a
           href="SubPages/hotels/hotels.html"
           class="quick-access-card bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow"
+          data-category="all"
         >
           <div class="text-2xl mb-2">🏨</div>
           <h3 class="text-xl font-semibold mb-2">Popular Hotels</h3>
@@ -113,6 +107,7 @@
         <a
           href="SubPages/activities/activities.html"
           class="quick-access-card bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow"
+          data-category="all family"
         >
           <div class="text-2xl mb-2">🌴</div>
           <h3 class="text-xl font-semibold mb-2">Top Activities</h3>
@@ -122,6 +117,7 @@
         <a
           href="SubPages/transportation/transportation.html"
           class="quick-access-card bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow"
+          data-category="all"
         >
           <div class="text-2xl mb-2">🚌</div>
           <h3 class="text-xl font-semibold mb-2">Getting Around</h3>
@@ -135,10 +131,11 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-8">Suggested Itineraries</h2>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-8" id="itineraryCards">
         <a
           href="SubPages/family/family-itinerary.html"
           class="itinerary-card block bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow"
+          data-category="all family"
         >
           <img
             src="images/family-adventure.png"
@@ -157,6 +154,7 @@
         <a
           href="SubPages/business/business-itinerary.html"
           class="itinerary-card block bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow"
+          data-category="all business"
         >
           <img
             src="images/business-leisure.png"
@@ -175,6 +173,7 @@
         <a
           href="SubPages/adventure/adventure-itinerary.html"
           class="itinerary-card block bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow"
+          data-category="all adventure"
         >
           <img
             src="images/adventure-seeker.png"
@@ -202,7 +201,7 @@
             <i data-lucide="dollar-sign" class="h-6 w-6 text-green-500"></i>
             <div>
               <h3 class="font-semibold">Currency</h3>
-              <p class="text-gray-600">USD accepted everywhere</p>
+              <p class="text-gray-600">Prices in USD</p>
             </div>
           </div>
           <div class="flex items-center space-x-4">

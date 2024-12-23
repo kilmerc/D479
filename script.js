@@ -5,35 +5,67 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get DOM elements
   const searchInput = document.getElementById("searchInput");
   const searchButton = document.getElementById("searchButton");
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  let selectedFilter = "all";
+  const searchFilter = document.getElementById("searchFilter");
+  const quickAccessCards = document.getElementById("quickAccessCards");
+  const itineraryCards = document.getElementById("itineraryCards");
+  const menuButton = document.querySelector('[data-lucide="menu"]');
+  const nav = document.querySelector("nav");
 
-  // Add click event listeners to filter buttons
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Remove active class from all buttons
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-
-      // Add active class to clicked button
-      button.classList.add("active");
-
-      // Update selected filter
-      selectedFilter = button.dataset.filter;
-    });
+  // Mobile menu functionality
+  menuButton.addEventListener("click", () => {
+    nav.classList.toggle("hidden");
   });
+
+  //Function to filter items
+  function filterItems(query, filter) {
+    const allCards = [
+      ...quickAccessCards.querySelectorAll(".quick-access-card"),
+      ...itineraryCards.querySelectorAll(".itinerary-card"),
+    ];
+
+    allCards.forEach((card) => {
+      const cardCategory = card.dataset.category || "";
+      const cardText = card.textContent.toLowerCase();
+      const searchQueryMatch = cardText.includes(query.toLowerCase());
+
+      const filterMatch =
+        filter === "all" || cardCategory.includes(filter);
+
+      if (searchQueryMatch && filterMatch) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  //Initial Load
+  filterItems("", "all");
 
   // Add click event listener to search button
   searchButton.addEventListener("click", () => {
     const searchQuery = searchInput.value;
-    console.log("Searching for:", searchQuery, "with filter:", selectedFilter);
-    // Implement search functionality here
-  });
+    const selectedFilter = searchFilter.value;
 
-  // Mobile menu functionality
-  const menuButton = document.querySelector('[data-lucide="menu"]');
-  const nav = document.querySelector("nav");
+    if (searchQuery.trim() === "") {
+          window.location.href = "SubPages/helicopter/helicopter.html";
+    }else{
+          filterItems(searchQuery, selectedFilter);
+            console.log(
+              "Searching for:",
+              searchQuery,
+              "with filter:",
+              selectedFilter
+            );
 
-  menuButton.addEventListener("click", () => {
-    nav.classList.toggle("hidden");
+          if (searchQuery.toLowerCase() === "helicopter rides") {
+            window.location.href = "SubPages/helicopter/helicopter.html";
+          }
+    }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize Lucide icons
+  lucide.createIcons();
 });
