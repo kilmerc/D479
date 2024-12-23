@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Taniti</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header (Same as hotels.html) -->
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">Taniti</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Explore</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Stay</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Plan</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Essential Info</a>
+                </nav>
+                <div class="md:hidden">
+                    <i data-lucide="menu" class="h-6 w-6 text-gray-500"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Emergency Banner -->
+    <div class="bg-red-50 p-4">
+        <div class="max-w-7xl mx-auto flex items-center space-x-4">
+            <i data-lucide="alert-circle" class="h-5 w-5 text-red-500"></i>
+            <p class="text-sm text-red-700">
+                Emergency: 911 | Hospital: +1-555-0123 | Tourist Help: +1-555-0199
+            </p>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="bg-blue-700 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold text-white">Top Activities</h1>
+            <p class="mt-4 text-xl text-blue-100">Discover the best experiences in Taniti</p>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="grid md:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Activity Type</label>
+                    <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>All Activities</option>
+                        <option>Water Sports</option>
+                        <option>Cultural</option>
+                        <option>Adventure</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Price Range</label>
+                    <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>All Prices</option>
+                        <option>Free</option>
+                        <option>$1-$50</option>
+                        <option>$51+</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Duration</label>
+                    <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>Any Duration</option>
+                        <option>< 2 hours</option>
+                        <option>Half Day</option>
+                        <option>Full Day</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Suitable For</label>
+                    <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        <option>Everyone</option>
+                        <option>Families</option>
+                        <option>Adults</option>
+                        <option>Seniors</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Listings -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Activity Card 1 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Scuba Diving" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Coral Reef Scuba Diving</h3>
+                    <p class="text-gray-600 mb-4">From $89/person</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                        <span class="ml-2 text-gray-600">4.9 (234 reviews)</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Water Sports</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">4 hours</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Cultural Tour" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Traditional Village Tour</h3>
+                    <p class="text-gray-600 mb-4">From $45/person</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">⭐⭐⭐⭐</span>
+                        <span class="ml-2 text-gray-600">4.7 (156 reviews)</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Cultural</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">3 hours</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Hiking" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Volcano Hiking Adventure</h3>
+                    <p class="text-gray-600 mb-4">From $75/person</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                        <span class="ml-2 text-gray-600">4.8 (189 reviews)</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Adventure</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">6 hours</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as hotels.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Taniti</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">History</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Culture</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Plan Your Trip</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Getting Here</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Accommodations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Activities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Essential Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Safety Tips</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Emergency Contacts</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">Tourist Office: +1-555-0199</li>
+                        <li class="text-gray-300">Email: info@taniti.gov</li>
+                        <li class="text-gray-300">Hours: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
