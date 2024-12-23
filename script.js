@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   // Initialize Lucide icons
   lucide.createIcons();
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
     }
   });
-});
+}); */
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize Lucide icons
