@@ -1,122 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helicopter Rides - Taniti</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="../styles.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
-</head>
-<body class="min-h-screen bg-gray-50">
+  </head>
+  <body class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0">
-                    <a href="../index.html" class="text-2xl font-bold text-blue-600">Taniti</a>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Explore</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Stay</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Plan</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2">Essential Info</a>
-                </nav>
-                <div class="md:hidden">
-                    <i data-lucide="menu" class="h-6 w-6 text-gray-500"></i>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0">
+            <a href="../../index.html" class="text-2xl font-bold text-blue-600"
+              >Taniti</a
+            >
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="../../index.html"
+              class="text-gray-700 hover:text-blue-600 px-3 py-2"
+              >Explore</a
+            >
+            <a
+              href="../hotels/hotels.html"
+              class="text-gray-700 hover:text-blue-600 px-3 py-2"
+              >Stay</a
+            >
+            <a
+              href="../activities/activities.html"
+              class="text-gray-700 hover:text-blue-600 px-3 py-2"
+              >Plan</a
+            >
+            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2"
+              >Essential Info</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <i data-lucide="menu" class="h-6 w-6 text-gray-500"></i>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Emergency Banner -->
     <div class="bg-red-50 p-4">
-        <div class="max-w-7xl mx-auto flex items-center space-x-4">
-            <i data-lucide="alert-circle" class="h-5 w-5 text-red-500"></i>
-            <p class="text-sm text-red-700">
-                Emergency: 911 | Hospital: +1-555-0123 | Tourist Help: +1-555-0199
-            </p>
-        </div>
+      <div class="max-w-7xl mx-auto flex items-center space-x-4">
+        <i data-lucide="alert-circle" class="h-5 w-5 text-red-500"></i>
+        <p class="text-sm text-red-700">
+          Emergency: 911 | Hospital: +1-555-0123 | Tourist Help: +1-555-0199
+        </p>
+      </div>
     </div>
 
     <!-- Page Header -->
     <div class="bg-blue-700 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-bold text-white">Helicopter Rides</h1>
-            <p class="mt-4 text-xl text-blue-100">Discover breathtaking views of Taniti</p>
-        </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-bold text-white">Helicopter Rides</h1>
+        <p class="mt-4 text-xl text-blue-100">
+          Discover breathtaking views of Taniti
+        </p>
+      </div>
     </div>
 
     <!-- Search Results Section -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid md:grid-cols-3 gap-8">
-
-            <!-- Helicopter Ride Card 1 -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
-                <img src="images/coastal-heli.png" alt="Coastal Helicopter Tour" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Coastal Helicopter Tour</h3>
-                    <p class="text-gray-600 mb-4">From $250 USD/person</p>
-                    <div class="flex items-center mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">4.9 (120 reviews)</span>
-                    </div>
-                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Coastal</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">30 minutes</span>
-                    </div>
-                     <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-                        Book Now
-                    </button>
-                </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Helicopter Ride Card 1 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="images/coastal-heli.png"
+            alt="Coastal Helicopter Tour"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Coastal Helicopter Tour</h3>
+            <p class="text-gray-600 mb-4">From $250 USD/person</p>
+            <div class="flex items-center mb-4">
+              <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+              <span class="ml-2 text-gray-600">4.9 (120 reviews)</span>
             </div>
-
-            <!-- Helicopter Ride Card 2 -->
-           <div class="bg-white rounded-lg shadow overflow-hidden">
-                <img src="images/volcano-heli.png" alt="Volcano Helicopter Tour" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Volcano Helicopter Tour</h3>
-                    <p class="text-gray-600 mb-4">From $350 USD/person</p>
-                     <div class="flex items-center mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">4.7 (95 reviews)</span>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                       <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Volcano</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">45 minutes</span>
-                    </div>
-                     <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-                        Book Now
-                    </button>
-                </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >Coastal</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >30 minutes</span
+              >
             </div>
-
-
-            <!-- Helicopter Ride Card 3 -->
-             <div class="bg-white rounded-lg shadow overflow-hidden">
-                <img src="images/island-heli.png" alt="Island Hopper Tour" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Island Hopper Tour</h3>
-                    <p class="text-gray-600 mb-4">From $400 USD/person</p>
-                     <div class="flex items-center mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">4.8 (150 reviews)</span>
-                    </div>
-                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Full Island</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">60 minutes</span>
-                    </div>
-                     <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-                        Book Now
-                    </button>
-                </div>
-            </div>
+            <button
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Book Now
+            </button>
+          </div>
         </div>
+
+        <!-- Helicopter Ride Card 2 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="images/volcano-heli.png"
+            alt="Volcano Helicopter Tour"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Volcano Helicopter Tour</h3>
+            <p class="text-gray-600 mb-4">From $350 USD/person</p>
+            <div class="flex items-center mb-4">
+              <span class="text-yellow-400">⭐⭐⭐⭐</span>
+              <span class="ml-2 text-gray-600">4.7 (95 reviews)</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >Volcano</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >45 minutes</span
+              >
+            </div>
+            <button
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Helicopter Ride Card 3 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="images/island-heli.png"
+            alt="Island Hopper Tour"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Island Hopper Tour</h3>
+            <p class="text-gray-600 mb-4">From $400 USD/person</p>
+            <div class="flex items-center mb-4">
+              <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+              <span class="ml-2 text-gray-600">4.8 (150 reviews)</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >Full Island</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                >60 minutes</span
+              >
+            </div>
+            <button
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-     <!-- Booking Section -->
-     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Booking Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="bg-blue-50 rounded-lg shadow p-6">
         <div class="text-center">
           <h2 class="text-2xl font-bold text-blue-800 mb-4">
@@ -136,44 +190,72 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">About Taniti</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white">History</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">Culture</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">News</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Plan Your Trip</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white">Getting Here</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">Accommodations</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">Activities</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Essential Info</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white">Safety Tips</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">Emergency Contacts</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white">FAQs</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-300">Tourist Office: +1-555-0199</li>
-                        <li class="text-gray-300">Email: info@taniti.gov</li>
-                        <li class="text-gray-300">Hours: 24/7</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Taniti</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">History</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Culture</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">News</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Plan Your Trip</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Getting Here</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Accommodations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Activities</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Essential Info</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Safety Tips</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Emergency Contacts</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">FAQs</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="text-gray-300">Tourist Office: +1-555-0199</li>
+              <li class="text-gray-300">Email: info@taniti.gov</li>
+              <li class="text-gray-300">Hours: 24/7</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
